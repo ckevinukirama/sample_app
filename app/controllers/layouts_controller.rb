@@ -7,4 +7,5 @@ class LayoutsController < ApplicationController
 
   def _footer
   end
+  
 end
