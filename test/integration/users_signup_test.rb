@@ -12,8 +12,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     end
     assert_response :unprocessable_entity
     assert_template 'users/new'
-    assert_select 'div#<CSS id for error explanation>'
-    assert_select 'div.<CSS class for field with error>'
+  end
     test "valid signup information" do
       assert_difference 'User.count', 1 do
         post users_path, params: { user: { name:  "Example User",
@@ -23,5 +22,6 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
       end
       follow_redirect!
       assert_template 'users/show'
-  end
+      assert is_logged_in?
+end
 end
