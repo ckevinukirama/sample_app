@@ -1,1 +1,4 @@
-# empty
+michael:
+  name: Example User
+  email: foo@example.com
+  password_digest: <%= BCrypt::Password.create('password') %>
