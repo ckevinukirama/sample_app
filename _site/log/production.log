@@ -1,0 +1,4 @@
+W, [2024-02-16T09:05:32.975949 #24184]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".
+I, [2024-02-16T09:05:33.021494 #24184]  INFO -- : Migrating to CreateUsers (20240215090031)
+I, [2024-02-16T09:05:33.031155 #24184]  INFO -- : Migrating to AddIndexToUsersEmail (20240215091231)
+I, [2024-02-16T09:05:33.036566 #24184]  INFO -- : Migrating to AddPasswordDigestToUsers (20240215092028)
